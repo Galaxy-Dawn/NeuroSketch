@@ -6,6 +6,8 @@
 <a src="https://img.shields.io/badge/%F0%9F%93%96-Arxiv_2512.09524-red.svg?style=flat-square" href="https://arxiv.org/abs/2512.09524">
 <img src="https://img.shields.io/badge/%F0%9F%93%96-Arxiv_2512.09524-red.svg?style=flat-square">
 </a>
+</div>
+  
 **TL;DR:** We propose an effective framework, NeuroSketch, for neural decoding via systematic architectural optimization.
 
 In this study, we propose NeuroSketch, an effective framework for neural decoding via systematic architecture optimization. Starting with the basic architecture study, we find that CNN-2D outperforms other architectures in neural decoding tasks and explore its effectiveness from temporal and spatial perspectives. Building on this, we optimize the architecture from macro- to micro-level, achieving improvements in performance at each step. The exploration process and model validations take over 5,000 experiments spanning three distinct modalities (visual, auditory, and speech), three types of brain signals (EEG, SEEG, and ECoG), and eight diverse decoding tasks. Experimental results indicate that NeuroSketch achieves state-of-the-art (SOTA) performance across all evaluated datasets, positioning it as a powerful tool for neural decoding. The complete experimental results are available at https://github.com/Galaxy-Dawn/NeuroSketch_Results.
@@ -24,11 +26,10 @@ Our study is guided by two core questions that aim to systematically investigate
 
 - Q2: Based on an appropriate architecture, how can we improve neural decoding performance through macro-to-micro architectural optimization?
 
-
 As shown in Figure 1, by answering the above questions, we consistently improve the decoding performance at each optimization step.
 
 <p align="center">
-  <img src="./fig/Fig1.png" alt="Fig1" style="zoom: 50%;" />
+  <img src="./fig/Fig1.png" alt="Fig1" width="66%" />
 </p>
 
 ## Model Architecture
@@ -36,14 +37,14 @@ As shown in Figure 1, by answering the above questions, we consistently improve 
 After the optimizations mentioned above, we have developed an effective framework, NeuroSketch. The overall architecture is shown in Figure 2(c). Like CNN-2D, NeuroSketch employs a 2D input representation, which is then processed by a stem layer to initiate feature extraction. The following forward propagation process is divided into four stages to progressively capture features from low-level to high-level. Following the four stages, the resulting feature is passed through a generalized mean (GeM) pooling layer that aggregates features along the channel and temporal dimensions. The pooled representation is then fed into a linear layer for the final classification. Additional details of the architecture and implementation can be found in Appendix D.2.
 
 <p align="center">
-  <img src="./fig/Fig2(c).png" alt="Fig2" style="zoom: 50%;" />
+  <img src="./fig/Fig2(c).png" alt="Fig2" width="66%" />
 </p>
 
 ## Main Results
 As shown in Figure 3, NeuroSketch outperforms all selected baselines, underscoring its strong capacity to model brain signals across diverse decoding scenarios.
 
 <p align="center">
-  <img src="./fig/Fig3.png" alt="Fig3" style="zoom: 50%;" />
+  <img src="./fig/Fig3.png" alt="Fig3" width="40%" />
 </p>
 
 ## ⚡Quick Start
