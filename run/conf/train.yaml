@@ -1,0 +1,59 @@
+hydra:
+  job:
+    name: train
+    chdir: true
+  run:
+    dir: ${dir.output_dir}/${hydra.job.name}/${wandb.exp_name}
+  sweep:
+    dir: ${dir.output_dir}/sweep/
+    subdir: ${wandb.exp_name}
+  sweeper:
+    params:
+      dataset.id:
+
+defaults:
+  - _self_
+  - dir: local
+  - model: NeuroSketch
+  - dataset: duin
+
+augmentation:
+  random_shift_prob: 0.5
+  add_noise_prob: 0.1
+  ChannelMasking_prob: 0.5
+  TimeMasking_prob: 0.5
+  mixup_prob: 0.5
+
+wandb:
+  project_name: neurosketch
+  exp_name: exp_01
+  group_name: default
+
+training:
+  gpu_id: 0
+  seed: 42
+  do_train: True
+  do_eval: True
+  do_predict: True
+  overwrite_output_dir: True
+  learning_rate: 3e-4
+  warmup_ratio: 0.1
+  lr_scheduler_type: 'cosine'
+  evaluation_strategy: "epoch"
+#  eval_steps: 30 #60
+  early_stopping_patience: 100
+  per_device_train_batch_size: 32  #64
+  per_device_eval_batch_size: 128  #128
+  weight_decay: 0.05
+  dataloader_num_workers: 8
+  num_train_epochs: 300
+  logging_dir: "./logs"
+  logging_steps: 10
+  save_strategy: "epoch"
+#  save_steps: 30 #60
+  save_total_limit: 2
+  load_best_model_at_end: True
+  metric_for_best_model: "top1_accuracy"
+  greater_is_better: True
+  remove_unused_columns: False
+  dataloader_pin_memory: True

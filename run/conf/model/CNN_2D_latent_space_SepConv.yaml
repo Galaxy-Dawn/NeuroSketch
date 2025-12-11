@@ -1,0 +1,10 @@
+name: CNN_2D_latent_space_SepConv
+seg_dim: 3
+stage1_depth: 4
+stage2_depth: 4
+stage3_depth: 4
+stage4_depth: 4
+stage1_dim: 96
+stage2_dim: 192
+stage3_dim: 384
+embed_dim: 768

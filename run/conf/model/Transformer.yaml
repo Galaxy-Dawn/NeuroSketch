@@ -1,0 +1,10 @@
+name: Transformer
+input_type: 3
+patch_len: 200
+patch_stride: 50
+hidden_size: 512
+n_layers: 8
+num_heads: 8
+ff_hidden_size: 2048
+use_channel_attention: False
+use_channel_cnn: True

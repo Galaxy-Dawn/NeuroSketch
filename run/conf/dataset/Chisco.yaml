@@ -1,0 +1,9 @@
+name: Chisco
+pad: False
+id: 1
+task: read #imagine
+input_channels: 122
+target_size: {'read': 39, 'imagine': 39}
+seq_len: {'read': 2501, 'imagine': 1651}
+split_method: n_fold
+fold: 0

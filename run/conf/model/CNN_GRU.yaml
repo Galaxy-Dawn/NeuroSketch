@@ -1,0 +1,12 @@
+name: CNN_GRU
+stage1_depth: 3
+stage2_depth: 3
+stage3_depth: 3
+stage4_depth: 3
+stage1_dim: 128
+stage2_dim: 256
+stage3_dim: 512
+embed_dim: 512
+gru_hidden_size: 512
+gru_layers: 4
+bidir: True
