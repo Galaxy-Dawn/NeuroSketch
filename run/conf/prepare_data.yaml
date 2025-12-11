@@ -1,0 +1,26 @@
+hydra:
+  job:
+    name: prepare_data
+    chdir: true
+  run:
+    dir: ${dir.output_dir}/${hydra.job.name}/${hydra.job.override_dirname}
+  sweep:
+    dir: ${dir.output_dir}/${hydra.job.name}/
+    subdir: ${hydra.job.override_dirname}
+  sweeper:
+    params:
+      dataset.id: 1,2,3,4,5,6,7,8,9,10,11,12
+
+defaults:
+  - _self_
+  - dir: local
+  - dataset: duin
+
+split_method: simple
+train_ratio: 0.6
+eval_ratio: 0.2
+test_ratio: 0.2
+random_seed: 42
+n_fold: 3
+stratify_flag: True
+max_workers: 1

@@ -1,0 +1,9 @@
+name: faceshouses
+pad: False
+id: 1
+task: faceshouses
+input_channels: [46, 41, 50, 31, 52, 39, 60, 56, 102, 58, 42, 40, 39, 58]
+target_size: {'faceshouses': 2}
+seq_len: {'faceshouses': 400}
+split_method: n_fold
+fold: 0

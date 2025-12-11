@@ -1,0 +1,13 @@
+name: NeuroSketch_sd
+seg_dim: 3
+stage1_depth: 4
+stage2_depth: 4
+stage3_depth: 4
+stage4_depth: 4
+embed_dim: 1024
+drop_path_rate: 0.4
+mlp_dropout: 0.1
+cnn_dropout: 0.3
+act_type: "Mish"
+head_dim: 16
+mlp_ratio: 2

@@ -1,0 +1,9 @@
+name: CNN_1D
+stage1_depth: 5
+stage2_depth: 5
+stage3_depth: 5
+stage4_depth: 5
+stage1_dim: 128
+stage2_dim: 256
+stage3_dim: 512
+embed_dim: 1024

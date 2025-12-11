@@ -1,0 +1,8 @@
+name: GRU
+patch_len: 200
+patch_stride: 50
+use_channel_cnn: False
+use_patch: True
+hidden_size: 512
+n_layers: 4
+bidir: True

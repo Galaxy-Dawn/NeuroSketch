@@ -1,0 +1,7 @@
+data_dir:
+processed_dir:
+output_dir:
+logging_dir:
+model_dir:
+model_save_dir:
+sub_dir: ./

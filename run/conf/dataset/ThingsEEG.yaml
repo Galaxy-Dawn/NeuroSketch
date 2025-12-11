@@ -1,0 +1,9 @@
+name: ThingsEEG
+pad: False
+id: 1
+task: test
+input_channels: 17
+target_size: {'train': 1654, 'test': 200}
+seq_len: {'train': 100, 'test': 100}
+split_method: n_fold
+fold: 0

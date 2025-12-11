@@ -1,0 +1,11 @@
+name: duin
+pad: False
+id: 2
+version: data_after_norm
+task: word_classification
+selected_channel: True
+input_channels: 10
+target_size: {"word_classification": 61}
+seq_len: {"word_classification": 3000}
+split_method: simple
+fold: 0

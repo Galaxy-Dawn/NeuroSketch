@@ -1,0 +1,11 @@
+name: OpenMIIR
+pad: False
+id: 1
+task: imagination   #perception
+input_channels: 64
+target_size: {"perception": 12, "imagination": 12}
+patch_len: 600
+patch_stride: 600
+seq_len: {"perception": 600, "imagination": 600}
+split_method: n_fold
+fold: 0

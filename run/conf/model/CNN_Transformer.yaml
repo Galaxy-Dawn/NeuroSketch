@@ -1,0 +1,12 @@
+name: CNN_Transformer
+stage1_depth: 3
+stage2_depth: 3
+stage3_depth: 3
+stage4_depth: 3
+stage1_dim: 96
+stage2_dim: 192
+stage3_dim: 384
+embed_dim: 768
+transformer_heads: 8
+transformer_depth: 4
+transformer_dropout: 0.0
