@@ -2,22 +2,15 @@
 <img src="./fig/logo.png"/>
 </div>
 
-<div align=center>
-<a src="https://img.shields.io/badge/%F0%9F%93%96-Arxiv_2512.09524-red.svg?style=flat-square" href="https://arxiv.org/abs/2512.09524">
-<img src="https://img.shields.io/badge/%F0%9F%93%96-Arxiv_2512.09524-red.svg?style=flat-square">
-</a>
-</div>
-  
 **TL;DR:** We propose an effective framework, NeuroSketch, for neural decoding via systematic architectural optimization.
 
-In this study, we propose NeuroSketch, an effective framework for neural decoding via systematic architecture optimization. Starting with the basic architecture study, we find that CNN-2D outperforms other architectures in neural decoding tasks and explore its effectiveness from temporal and spatial perspectives. Building on this, we optimize the architecture from macro- to micro-level, achieving improvements in performance at each step. The exploration process and model validations take over 5,000 experiments spanning three distinct modalities (visual, auditory, and speech), three types of brain signals (EEG, SEEG, and ECoG), and eight diverse decoding tasks. Experimental results indicate that NeuroSketch achieves state-of-the-art (SOTA) performance across all evaluated datasets, positioning it as a powerful tool for neural decoding. The complete experimental results are available at https://github.com/Galaxy-Dawn/NeuroSketch_Results.
+In this study, we propose NeuroSketch, an effective framework for neural decoding via systematic architecture optimization. Starting with the basic architecture study, we find that CNN-2D outperforms other architectures in neural decoding tasks and explore its effectiveness from temporal and spatial perspectives. Building on this, we optimize the architecture from macro- to micro-level, achieving improvements in performance at each step. The exploration process and model validations take over 5,000 experiments spanning three distinct modalities (visual, auditory, and speech), three types of brain signals (EEG, SEEG, and ECoG), and eight diverse decoding tasks. Experimental results indicate that NeuroSketch achieves state-of-the-art (SOTA) performance across all evaluated datasets, positioning it as a powerful tool for neural decoding.
 
 ## :rocket: News
 
 - 📣 2025/12/11:  We introduced a new variant of NeuroSketch for speech decoding, named NeuroSketch‑SD. This version contains approximately 20M parameters, offering a higher model capacity for decoding speech information from brain signals.
   Specifically, we have optimized the feature dimension across stages, the downsampling strategy, the convolutional design, the FFN structure, and the activation function to enhance decoding performance.
 - 📣 2025/12/9:  We made NeuroSketch public!
-
 
 ## Roadmap
 Our study is guided by two core questions that aim to systematically investigate how to design an effective framework for neural decoding:
@@ -65,8 +58,7 @@ Note: SEED-DV dataset requires manual application approval before download.
 ### 🔧Setup
 1. **Clone Repository**
 ```bash
-git clone 
-https://github.com/Galaxy-Dawn/NeuroSketch.git
+git clone https://github.com/Galaxy-Dawn/NeuroSketch-anonymous.git
 ```
 2. **Configure Paths**
 ```bash
@@ -106,17 +98,3 @@ cd ./run/scripts/roadmap
 cd ./run/scripts/exp
 # Run individual scripts
 ```
-
-## :book: Citation
-If you find this work useful for your research or applications, please cite using this BibTeX:
-```bibtex
-@misc{zhang2025neurosketcheffectiveframeworkneural,
-      title={NeuroSketch: An Effective Framework for Neural Decoding via Systematic Architectural Optimization}, 
-      author={Gaorui Zhang and Zhizhang Yuan and Jialan Yang and Junru Chen and Li Meng and Yang Yang},
-      year={2025},
-      eprint={2512.09524},
-      archivePrefix={arXiv},
-      primaryClass={q-bio.NC},
-      url={https://arxiv.org/abs/2512.09524}, 
-```
-
