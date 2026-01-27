@@ -65,8 +65,7 @@ Note: SEED-DV dataset requires manual application approval before download.
 ### 🔧Setup
 1. **Clone Repository**
 ```bash
-git clone 
-https://github.com/Galaxy-Dawn/NeuroSketch.git
+git clone https://github.com/Galaxy-Dawn/NeuroSketch.git
 ```
 2. **Configure Paths**
 ```bash
